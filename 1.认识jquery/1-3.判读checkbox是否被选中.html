@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+
+</head>
+<body>
+    <input type="checkbox">
+    <script>
+        var check = document.querySelector('input')
+        var $check = $('input')
+        // dom
+        /*
+        $check.click(function(){
+            if(check.checked){
+                alert('被选中')
+            }
+        })
+        
+         */ 
+     
+        // jquery
+        $check.click(function(){
+            if($(this).is(':checked')){
+                alert('被选中')
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+
+</head>
+<body>
+    
+    <script>
+        // 当用jqeury检查某元素是否存在时不能用
+        if($('#tt')){
+            //do something
+        }
+        // 因为$('#tt')获取的永远是对象，即使网页上没有此元素
+
+        // 应该根据获取元素的长度来判断，或者转换成dom元素来判断
+        if($('#tt').length>0){
+
+        }
+        if($('#tt')[0]){
+            
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+
+</head>
+<body>
+    <!-- 
+        一.juery转dom 
+            1.[index]     索引
+            2.get(index)  方法
+
+         二.dom转juery
+            $()把dom元素包起来
+     -->
+     <div class="a">111</div>
+    <script>
+        var $a = $('.a')
+        // 一.jquery转dom
+        console.log( $a[0])
+        console.log($a.get(0))
+        //二.dom转juery
+        var a = document.querySelector('.a')
+        console.log($(a))
+    </script>
+</body>
+</html>
